@@ -38,10 +38,10 @@ elif selection =="Random Forest":
 	model = pickle.load(open('random_forest_model.pkl','rb'))
 else:
 	st.write("you selected”, selection, “model")
-	model = pickle.load(open('light_gbm_model.pkl','rb'))
+	model = pickle.load(open('lgb_model.pkl','rb'))
+
+
 	
-
-
 v2 = st.sidebar.slider(label="TransactionAmt", min_value=-10.0, max_value=15.80, step=0.1)
 
 x_default = x_valid.iloc[0, :]  #dropping transaction amount
