@@ -7,10 +7,6 @@
 import streamlit as st
 import pickle
 import pandas as pd
-#from sklearn.preprocessing import MinMaxscaler
-from PIL import Image
-import base64
-from sklearn import metrics
 
 
 st.sidebar.title('Transaction Information')
